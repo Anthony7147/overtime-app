@@ -93,8 +93,7 @@ end
       @edit_post = Post.create(date: Date.today, rationale: "asdf", user_id: @edit_user.id)
     end
 
-
-    it 'can be edited' do
+   it 'can be edited' do
       visit edit_post_path(@edit_post)
 
       fill_in 'post[date]', with: Date.today
