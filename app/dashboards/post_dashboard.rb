@@ -2,6 +2,7 @@ require "administrate/base_dashboard"
 
 class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
+    ATTRIBUTE_TYPES = {
     user: Field::BelongsTo.with_options(searchable: false),
     id: Field::Number.with_options(searchable: false),
     date: Field::DateTime.with_options(searchable: false),
@@ -11,6 +12,11 @@ class PostDashboard < Administrate::BaseDashboard
     status: Field::Text.with_options(searchable: true),
   }.freeze
 
+  # COLLECTION_ATTRIBUTES
+  # an array of attributes that will be displayed on the model's index page.
+  #
+  # By default, it's limited to four items to reduce clutter on index pages.
+  # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :user,
     :status,
@@ -18,6 +24,8 @@ class PostDashboard < Administrate::BaseDashboard
     :rationale,
   ].freeze
 
+  # SHOW_PAGE_ATTRIBUTES
+  # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :user,
     :status,
@@ -28,11 +36,19 @@ class PostDashboard < Administrate::BaseDashboard
     :updated_at,
   ].freeze
 
+  # FORM_ATTRIBUTES
+  # an array of attributes that will be displayed
+  # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :user,
     :date,
     :rationale,
-    :status,
   ].freeze
 
+  # Overwrite this method to customize how posts are displayed
+  # across all pages of the admin dashboard.
+  #
+  # def display_resource(post)
+  #   "Post ##{post.id}"
+  # end
 end

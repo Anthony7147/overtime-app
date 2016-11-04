@@ -21,5 +21,8 @@ x Bootstrap -> formatting
 x Icons from glyphicons
 x Update the styles for forms
 
-## Refactor TODOS:
-x Refactor user association integration test in post_spec
+## TODOS:
+- Integrate validation for phone attr in User:
+	# No spaces or dashes
+	# exactly 10 characters
+	# all characters have to be a number
