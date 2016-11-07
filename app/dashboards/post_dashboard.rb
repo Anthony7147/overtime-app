@@ -2,7 +2,6 @@ require "administrate/base_dashboard"
 
 class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
-    ATTRIBUTE_TYPES = {
     user: Field::BelongsTo.with_options(searchable: false),
     id: Field::Number.with_options(searchable: false),
     date: Field::DateTime.with_options(searchable: false),
