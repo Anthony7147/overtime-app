@@ -13,8 +13,9 @@ x Approval Workflow
 x SMS Sending -> link to approval or overtime input
 x Administrate admin dashboard
 x Block non admin and guest users
-- Email summary to managers for approval
+x Email summary to managers for approval
 x Needs to be documented if employee did not log overtime
 - Create audit log for each text message
+- Need to update end date when confirmed
 
 ## TODOS:
