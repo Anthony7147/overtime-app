@@ -10,10 +10,11 @@ x Auditlog
 
 ## Features:
 x Approval Workflow
-- SMS Sending -> link to approval or overtime input
+x SMS Sending -> link to approval or overtime input
 x Administrate admin dashboard
 x Block non admin and guest users
 - Email summary to managers for approval
 x Needs to be documented if employee did not log overtime
+- Create audit log for each text message
 
 ## TODOS:
