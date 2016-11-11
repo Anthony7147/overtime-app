@@ -22,9 +22,9 @@ x Update buttons on employee homepage so they show on mobile
 x Update buttons to include time span
 x Update button sort order on homepage
 x Remove "entries" and "Request overtime" buttons for managers.
-- Fix a bug in admin dashboard. I think this should be more a configuration setting we need to update.
-- Implement honeybadger for error reporting
+x Fix a bug in admin dashboard. I think this should be more a configuration setting we need to update.
+x Implement honeybadger for error reporting
 - Implement new relic for keeping the site alive
-- Check on data issue and make sure correct hours are being tracked
+
 
 ## TODOS:
