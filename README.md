@@ -20,7 +20,7 @@ x Need to update end date when confirmed
 x Need to update audit log status when an overtime request is denied
 x Update buttons on employee homepage so they show on mobile
 x Update buttons to include time span
-- Update button sort order on homepage
+x Update button sort order on homepage
 - Remove "entries" and "Request overtime" buttons for managers.
 - Fix a bug in admin dashboard. I think this should be more a configuration setting we need to update.
 - Implement honeybadger for error reporting
